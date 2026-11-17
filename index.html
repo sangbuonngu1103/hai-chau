@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hải Châu, Nghệ An — Tạp chí biển</title>
+  <meta name="description" content="Khám phá xã Hải Châu, Nghệ An: bãi biển Hòn Câu cát mịn sóng êm, bè mảng ra khơi, mùa cá trích nướng, lễ hội và những làng nghề truyền thống." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ===== Thanh điều hướng ===== -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Hải Châu">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M2 20c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M2 26c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".5"/><circle cx="24" cy="9" r="4.2" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-text">Hải&nbsp;Châu<small>Tạp chí biển · Nghệ An</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Điều hướng chính">
+        <a href="#home">Trang chủ</a>
+        <a href="#destinations">Điểm đến</a>
+        <a href="#areas">Vùng đất</a>
+        <a href="#festivals">Lễ hội</a>
+        <a href="#crafts">Làng nghề</a>
+        <a href="#food">Ẩm thực</a>
+        <a href="#gallery">Thư viện</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Bìa tạp chí ===== -->
+    <section class="cover" id="home">
+      <div class="container cover-grid">
+        <div class="cover-copy">
+          <p class="cover-kicker reveal"><span>Số 01</span> Xã Hải Châu, Nghệ An</p>
+          <h1 class="cover-title reveal">
+            Hải&nbsp;Châu
+            <em>nơi bè mảng ra khơi, cá tươi đầy bãi</em>
+          </h1>
+          <p class="cover-desc reveal">
+            Hải Châu là xã Hải Châu, Nghệ An, hợp thành từ năm vùng đất cũ:
+            Diễn Hoàng, Diễn Kim, Diễn Mỹ, Diễn Hùng và Diễn Hải. Phía Đông là
+            Biển Đông với bãi Hòn Câu cát mịn sóng êm, những chiếc bè mảng nối
+            đuôi nhau ra khơi và mùa cá trích nướng thơm cả bãi bờ.
+          </p>
+          <div class="cover-actions reveal">
+            <a href="#areas" class="btn btn-primary">Khám phá năm vùng đất</a>
+            <a href="#gallery" class="btn btn-ghost">Xem thư viện ảnh</a>
+          </div>
+
+          <div class="cover-stats reveal">
+            <div class="stat">
+              <b data-count="29">0</b>
+              <span>km² diện tích tự nhiên</span>
+            </div>
+            <div class="stat">
+              <b data-count="300" data-suffix="+">0</b>
+              <span>bè mảng đánh bắt gần bờ</span>
+            </div>
+            <div class="stat">
+              <b data-count="5">0</b>
+              <span>vùng đất hợp thành xã</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="cover-figure reveal">
+          <img
+            src="https://datafiles.nghean.gov.vn/nan-ubnd/2935/quantritintuc20234/b1638180395519521886.jpg"
+            alt="Bãi biển Diễn Châu đông vui đầu mùa du lịch"
+            data-fallback="cover-bien"
+            fetchpriority="high" />
+          <figcaption>
+            <span class="cover-tag">Biển Hòn Câu</span>
+            <span class="cover-cap">Cát mịn, sóng êm — bãi tắm của vùng duyên hải Hải Châu.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Dải chữ chạy ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Bãi biển Hòn Câu</span><i>◆</i>
+        <span>Bè mảng ra khơi</span><i>◆</i>
+        <span>Mùa cá trích nướng</span><i>◆</i>
+        <span>Nuôi tôm công nghệ cao</span><i>◆</i>
+        <span>Đồng lạc – vừng</span><i>◆</i>
+        <span>Kênh Nhà Lê</span><i>◆</i>
+        <span>Đình Tám Mái</span><i>◆</i>
+        <span>Bãi biển Hòn Câu</span><i>◆</i>
+        <span>Bè mảng ra khơi</span><i>◆</i>
+        <span>Mùa cá trích nướng</span><i>◆</i>
+        <span>Nuôi tôm công nghệ cao</span><i>◆</i>
+        <span>Đồng lạc – vừng</span><i>◆</i>
+        <span>Kênh Nhà Lê</span><i>◆</i>
+        <span>Đình Tám Mái</span><i>◆</i>
+      </div>
+    </div>
+
+    <!-- ===== 01 · Về Hải Châu ===== -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img
+            src="https://bna.1cdn.vn/2025/09/20/bna_hai-chau-2222.png"
+            alt="Một góc xã Hải Châu, tỉnh Nghệ An"
+            data-fallback="haichau-gocxa" />
+          <span class="about-index">01</span>
+        </div>
+
+        <div class="about-text">
+          <p class="sec-label reveal"><span>01</span> Về Hải Châu</p>
+          <h2 class="sec-title reveal">Năm vùng đất, một miền sóng</h2>
+          <p class="drop reveal">
+            Xã Hải Châu thuộc tỉnh Nghệ An, được thành lập ngày 16/6/2025 trên cơ
+            sở hợp nhất bốn xã Diễn Hoàng, Diễn Kim, Diễn Mỹ và Hùng Hải (huyện
+            Diễn Châu cũ). Trong đó, Hùng Hải là xã lập năm 2024 từ hai xã Diễn
+            Hùng và Diễn Hải. Hải Châu rộng 29,13 km² với hơn 43.000 người dân,
+            phía Đông giáp Biển Đông.
+          </p>
+          <p class="reveal">
+            Người Hải Châu sống bằng nghề biển, nuôi trồng thủy sản và nông
+            nghiệp: bè mảng đánh bắt gần bờ, nuôi tôm công nghệ cao, trồng lạc –
+            vừng, trồng dâu nuôi tằm và đan lát mây tre. Chỉ ba vùng đất cũ giáp
+            biển là Diễn Kim, Diễn Hùng và Diễn Hải; còn Diễn Mỹ và Diễn Hoàng là
+            vùng nội đồng. Xưa kia, tuyến kênh Nhà Lê (nay là sông Me) từng đi qua
+            vùng đất này.
+          </p>
+
+          <blockquote class="pull reveal">
+            “Buổi sớm, cả bãi biển rộn ràng khi bè mảng nối đuôi cập bờ.”
+          </blockquote>
+
+          <ul class="fact-row">
+            <li class="reveal"><b>29,13</b><span>km² diện tích</span></li>
+            <li class="reveal"><b>43.155</b><span>người dân</span></li>
+            <li class="reveal"><b>5</b><span>vùng đất hợp thành</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 02 · Điểm đến ===== -->
+    <section class="section destinations" id="destinations">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label reveal"><span>02</span> Điểm đến</p>
+          <h2 class="sec-title reveal">Những nơi nhất định phải ghé</h2>
+          <p class="sec-lead reveal">
+            Từ bãi biển Hòn Câu tới cửa lạch, đền đình cổ và vùng nuôi tôm — mỗi
+            điểm đến ở Hải Châu là một lát cắt của cuộc sống miền biển. Bấm vào
+            từng thẻ để đọc bài chi tiết.
+          </p>
+        </div>
+
+        <div class="bento" id="bentoGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== 03 · Vùng đất (tạp chí cuộn dọc) ===== -->
+    <section class="section areas" id="areas">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label reveal"><span>03</span> Theo từng vùng</p>
+          <h2 class="sec-title reveal">Năm vùng đất, một miền sóng</h2>
+          <p class="sec-lead reveal">
+            Hải Châu hôm nay ghép lại từ năm vùng đất cũ. Mỗi vùng còn giữ riêng
+            một ngôi đền, ngôi đình hay bãi biển — kèm nguồn dẫn chứng để bạn tra
+            cứu thêm.
+          </p>
+        </div>
+      </div>
+
+      <div class="area-list">
+        <!-- 01 Diễn Kim -->
+        <article class="area reveal">
+          <div class="container area-grid">
+            <div class="area-head">
+              <span class="area-no">01</span>
+              <h3>Diễn Kim</h3>
+              <p class="area-sub">Hoa Lũy · Kim Lũy — vùng tôm &amp; biển</p>
+              <p class="area-intro">
+                Vùng đất phía Đông Bắc của xã, xưa gọi là Hoa Lũy – Kim Lũy, nơi
+                sông Bùng đổ ra biển qua cửa Lạch Vạn. Đây là địa bàn trọng điểm
+                nuôi tôm công nghệ cao của Diễn Châu cũ, gắn với giai thoại cá Ông
+                và ngôi đền Trang cổ kính.
+              </p>
+              <ul class="area-facts">
+                <li>Tên cũ: Hoa Lũy · Kim Lũy</li>
+                <li>Giáp biển: có (cửa Lạch Vạn)</li>
+              </ul>
+              <a class="area-more" href="chitiet.html?id=dien-kim">Xem chi tiết Diễn Kim →</a>
+            </div>
+
+            <div class="area-media">
+              <figure class="lm lm--lead">
+                <a class="lm-link" href="chitiet.html?id=den-trang" aria-label="Xem chi tiết Đền Trang"></a>
+                <img src="https://www.tapchisonglam.vn/wp-content/uploads/2023/11/den-Trang-.jpg" alt="Đền Trang ở xóm Hoàng Châu, xã Diễn Kim" data-fallback="dentrang" loading="lazy" />
+                <figcaption>
+                  <h4>Đền Trang</h4>
+                  <p>Ngôi đền ở xóm Hoàng Châu, khởi dựng từ thời Lê Trung hưng (thế kỷ XVI), thờ Tứ Dương Thành Quốc công và hợp tự cá Ông. Phục dựng năm 2014, hiện lưu 18 đạo sắc phong, sớm nhất từ năm 1767.</p>
+                  <a class="src" href="https://www.tapchisonglam.vn/den-trang-ngoi-den-o-vung-van-hoa-bien-dien-kim/" target="_blank" rel="noopener">Dẫn chứng: Tạp chí Sông Lam ↗</a>
+                </figcaption>
+              </figure>
+
+              <div class="lm-row">
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=be-mang-ca-trich" aria-label="Xem chi tiết bến bè mảng và mùa cá trích"></a>
+                  <img src="https://i.ex-cdn.com/danviet.vn/files/content/2026/01/08/163836c11-1630.jpg" alt="Bè mảng của ngư dân cập bờ buổi sớm" data-fallback="bemang-kim" loading="lazy" />
+                  <figcaption>
+                    <h4>Bến bè mảng Hoa Lũy</h4>
+                    <p>Ngày mới ở làng biển bắt đầu từ 2 giờ sáng; bè mảng nối đuôi ra khơi rồi về bờ khi trời vừa hửng.</p>
+                    <a class="src" href="https://dantocmiennui.baotintuc.vn/nhip-song-dam-da-o-lang-bien-dien-chau-post1372656.html" target="_blank" rel="noopener">Dẫn chứng: Dân tộc &amp; Miền núi ↗</a>
+                  </figcaption>
+                </figure>
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=vung-nuoi-tom" aria-label="Xem chi tiết vùng nuôi tôm công nghệ cao"></a>
+                  <img src="https://bna.1cdn.vn/2025/09/20/bna_mo-hinh-nuoi-tom-cong-nghe-cao-tren-dia-ban-xa-dien-kim-cu-nay-la-xa-hai-chau-1-.jpg" alt="Mô hình nuôi tôm công nghệ cao ở Diễn Kim" data-fallback="nuoitom-kim" loading="lazy" />
+                  <figcaption>
+                    <h4>Vùng nuôi tôm công nghệ cao</h4>
+                    <p>Diễn Kim là vùng nuôi trồng thủy sản trọng điểm của Diễn Châu, có hộ ứng dụng công nghệ cao đạt lợi nhuận tiền tỷ mỗi năm.</p>
+                    <a class="src" href="https://ngheandost.gov.vn/nong-nghiep/dien-chau-hieu-qua-kinh-te-tu-mo-hinh-nuoi-tom-cong-nghe-cao-6894.html" target="_blank" rel="noopener">Dẫn chứng: Sở KH&amp;CN Nghệ An ↗</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Diễn Hùng -->
+        <article class="area area--flip reveal">
+          <div class="container area-grid">
+            <div class="area-head">
+              <span class="area-no">02</span>
+              <h3>Diễn Hùng</h3>
+              <p class="area-sub">Vùng cát ven biển — đất hươu nhung</p>
+              <p class="area-intro">
+                Vùng đất ven biển phía Bắc giáp Quỳnh Lưu, gồm các thôn Hùng
+                Nghĩa, Hùng Phong, Ngọc Mỹ. Nơi đây nổi tiếng với nghề nuôi hươu
+                lấy nhung và dải rừng phi lao phòng hộ chạy dọc bờ biển.
+              </p>
+              <ul class="area-facts">
+                <li>Thôn cũ: Hùng Nghĩa · Hùng Phong · Ngọc Mỹ</li>
+                <li>Giáp biển: có</li>
+              </ul>
+              <a class="area-more" href="chitiet.html?id=dien-hung">Xem chi tiết Diễn Hùng →</a>
+            </div>
+
+            <div class="area-media">
+              <figure class="lm lm--lead">
+                <a class="lm-link" href="chitiet.html?id=kenh-nha-le" aria-label="Xem chi tiết Kênh Nhà Lê"></a>
+                <img src="https://thegioidisan.vn/assets/media/2016/Thang%208/kenhnhaledonnhanbangditichquocgia.jpg" alt="Kênh Nhà Lê — đoạn kênh đào cổ ở Nghệ An" data-fallback="kenhnhale" loading="lazy" />
+                <figcaption>
+                  <h4>Kênh Nhà Lê</h4>
+                  <p>Kênh Nhà Lê là hệ thống kênh đào cổ, khởi công từ năm 983 thời Tiền Lê. Đoạn qua Nghệ An dài 128 km; tại Diễn Châu, nhánh kênh Mi bắt đầu từ cửa Thai (Quỳnh Lưu), tiếp giáp Diễn Hùng rồi chảy qua 8 xã. Kênh Nhà Lê được xếp hạng Di tích lịch sử cấp quốc gia.</p>
+                  <a class="src" href="https://www.truyenhinhnghean.vn/chuyen-de/201006/kenh-nha-le-o-dien-chau-phan-3-kenh-mi-va-vua-lua-phu-dien-638318/" target="_blank" rel="noopener">Dẫn chứng: Truyền hình Nghệ An ↗</a>
+                </figcaption>
+              </figure>
+
+              <div class="lm-row">
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=be-mang-ca-trich" aria-label="Xem chi tiết làng chài và mùa cá trích"></a>
+                  <img src="https://media3.baotintuc.vn/images/JQoPFRNPPTA1Y0eS_o1V73xLObA35UsQEvXOIcHoEi0iEfEg24kjDaS-qZHQLJfcISPoUa0NUBrP4Svt_5fNm-ft9oJ8AKLoGMoS6zxYS7n4gh6J-nXGTyaGopidIvagc8fwSDAc2DxXJUMaqJAPv4cUdBs4wP_rEc3LSazNwoTWBRp3Q4VSZekDnstUFw6e/vna-vna-potal-ngu-dan-dien-chau-nghe-an-vao-mua-khai-thac-ca-trich-7241336-3248.jpg.webp" alt="Ngư dân Diễn Châu vào mùa khai thác cá trích" data-fallback="langchai-hung" loading="lazy" />
+                  <figcaption>
+                    <h4>Làng chài ven biển</h4>
+                    <p>Nhịp sống làng biển Diễn Hùng – Diễn Hải – Diễn Kim bắt đầu từ 2 giờ sáng, khi bè mảng gần bờ rời bến và trở về trước bình minh.</p>
+                    <a class="src" href="https://dantocmiennui.baotintuc.vn/nhip-song-dam-da-o-lang-bien-dien-chau-post1372656.html" target="_blank" rel="noopener">Dẫn chứng: Dân tộc &amp; Miền núi ↗</a>
+                  </figcaption>
+                </figure>
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=duong-ven-bien" aria-label="Xem chi tiết cung đường ven biển"></a>
+                  <img src="https://bna.1cdn.vn/2025/08/20/bna_duong-1.jpg" alt="Cung đường ven biển Nghệ An đoạn qua Diễn Châu" data-fallback="duongvenbien" loading="lazy" />
+                  <figcaption>
+                    <h4>Cung đường ven biển</h4>
+                    <p>Tuyến đường ven biển qua Diễn Châu dài khoảng 24,44 km, riêng đoạn qua Diễn Hùng dài 3,87 km — cung đường ngắm biển đẹp của vùng.</p>
+                    <a class="src" href="https://baonghean.vn/duong-ven-bien-dong-luc-phat-trien-cho-nghe-an-10304779.html" target="_blank" rel="noopener">Dẫn chứng: Báo Nghệ An ↗</a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <figure class="lm lm--lead">
+                <a class="lm-link" href="chitiet.html?id=nuoi-huou" aria-label="Xem chi tiết nghề nuôi hươu lấy nhung"></a>
+                <img src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/062023/nai1_20230610181026.jpg" alt="Trang trại nuôi hươu lấy nhung ở Diễn Hùng" data-fallback="nuoihuou-hung" loading="lazy" />
+                <figcaption>
+                  <h4>Nuôi hươu lấy nhung</h4>
+                  <p>Diễn Hùng là “thủ phủ” hươu của Nghệ An với gần 1.600 con và khoảng 140 hộ nuôi. Nhung hươu được thương lái đánh giá cao; có cặp nhung hơn 3,3 kg bán tới 65 triệu đồng.</p>
+                  <a class="src" href="https://truyenhinhnghean.vn/kinh-te/202306/nong-dan-dien-hung-giau-len-nho-nghe-nuoi-huou-f130ab2" target="_blank" rel="noopener">Dẫn chứng: Truyền hình Nghệ An ↗</a>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Diễn Hải -->
+        <article class="area reveal">
+          <div class="container area-grid">
+            <div class="area-head">
+              <span class="area-no">03</span>
+              <h3>Diễn Hải</h3>
+              <p class="area-sub">Bãi biển Hòn Câu — "thiên đường" tắm biển</p>
+              <p class="area-intro">
+                Vùng đất ven biển phía Đông, nổi tiếng nhất với bãi biển Hòn Câu —
+                nơi từng được ví là "thiên đường" tắm biển của Diễn Châu cũ, cùng
+                đảo Hòn Câu nhô lên ngoài khơi.
+              </p>
+              <ul class="area-facts">
+                <li>Bãi biển Hòn Câu · dài ~2 km</li>
+                <li>Giáp biển: có</li>
+              </ul>
+              <a class="area-more" href="chitiet.html?id=dien-hai">Xem chi tiết Diễn Hải →</a>
+            </div>
+
+            <div class="area-media">
+              <figure class="lm lm--lead">
+                <a class="lm-link" href="chitiet.html?id=hon-cau-bai-bien" aria-label="Xem chi tiết bãi biển Hòn Câu"></a>
+                <img src="https://toplistnghean.vn/storage/media/2026/03/bien-dien-hai-toplistnghean-2.webp" alt="Bãi biển Hòn Câu, xã Diễn Hải" data-fallback="honcau-lead" loading="lazy" />
+                <figcaption>
+                  <h4>Bãi biển Hòn Câu</h4>
+                  <p>Bờ biển dài khoảng 2 km với bãi tắm thoải, cát mịn, sóng nhẹ. Một thời là khu du lịch biển đông khách bậc nhất của huyện Diễn Châu.</p>
+                  <a class="src" href="https://vnexpress.net/hoang-tan-o-pho-den-do-hon-cau-4664195.html" target="_blank" rel="noopener">Dẫn chứng: VnExpress ↗</a>
+                </figcaption>
+              </figure>
+
+              <div class="lm-row">
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=hon-cau-dao" aria-label="Xem chi tiết đảo Hòn Câu"></a>
+                  <img src="https://datafiles.nghean.gov.vn/nan-ubnd/2935/quantritintuc20234/b1638180395519521886.jpg" alt="Người dân và du khách tắm biển Diễn Châu" data-fallback="baitam-hai" loading="lazy" />
+                  <figcaption>
+                    <h4>Bãi tắm Diễn Hải</h4>
+                    <p>Diễn Châu có khoảng 35 km bờ biển với nhiều bãi tắm đẹp; Diễn Hải (Hòn Câu) là một trong những bãi được nhắc tới nhiều nhất.</p>
+                    <a class="src" href="https://dienchau.nghean.gov.vn/van-hoa-xa-hoi/soi-dong-dau-mua-du-lich-bien-dien-chau-565715" target="_blank" rel="noopener">Dẫn chứng: Cổng TTĐT huyện Diễn Châu ↗</a>
+                  </figcaption>
+                </figure>
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=cua-lach-van" aria-label="Xem chi tiết cửa biển Lạch Vạn"></a>
+                  <img src="https://toplistnghean.vn/storage/media/2026/03/bien-dien-hai-toplistnghean-5.webp" alt="Bãi biển Hòn Câu với bãi cát và sóng" data-fallback="honcau-5" loading="lazy" />
+                  <figcaption>
+                    <h4>Biển Hòn Câu &amp; nghề gần bờ</h4>
+                    <p>Vùng biển Hòn Câu gắn với nghề đánh bắt gần bờ và bè mảng; hải sản tươi được bán ngay trên bãi sau mỗi chuyến về.</p>
+                    <a class="src" href="https://dienchau.nghean.gov.vn/van-hoa-xa-hoi/soi-dong-dau-mua-du-lich-bien-dien-chau-565715" target="_blank" rel="noopener">Dẫn chứng: Cổng TTĐT huyện Diễn Châu ↗</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Diễn Mỹ -->
+        <article class="area area--flip reveal">
+          <div class="container area-grid">
+            <div class="area-head">
+              <span class="area-no">04</span>
+              <h3>Diễn Mỹ</h3>
+              <p class="area-sub">Làng Đông Xương — đất khoa bảng</p>
+              <p class="area-intro">
+                Vùng đất nội đồng phía Tây Nam của xã, tên cũ là làng Đông Xương —
+                vùng đất khoa bảng với nghề đóng cối xay, hát tuồng và ngôi nhà
+                thờ họ Vũ hơn 500 năm tuổi.
+              </p>
+              <ul class="area-facts">
+                <li>Tên cũ: làng Đông Xương</li>
+                <li>Giáp biển: không</li>
+              </ul>
+              <a class="area-more" href="chitiet.html?id=dien-my">Xem chi tiết Diễn Mỹ →</a>
+            </div>
+
+            <div class="area-media">
+              <figure class="lm lm--lead">
+                <a class="lm-link" href="chitiet.html?id=nha-tho-ho-vu" aria-label="Xem chi tiết nhà thờ họ Vũ đại tôn"></a>
+                <img src="https://datafiles.nghean.gov.vn/nan-ubnd/6649/quantritintuc20259/z7044126104528_eca5fbd09ea3ff07bb414cd844d59fa3-724342.jpg" alt="Nhà thờ họ Vũ đại tôn ở xóm Đông Mỹ" data-fallback="hovu-1" loading="lazy" />
+                <figcaption>
+                  <h4>Nhà thờ họ Vũ đại tôn</h4>
+                  <p>Ở xóm Đông Mỹ, khởi dựng từ năm Canh Ngọ 1510, thờ Tham đốc Dũng Nghĩa hầu Đại tướng quân Vũ Trung Lương. Được công nhận Di tích lịch sử cấp tỉnh năm 2013.</p>
+                  <a class="src" href="https://haichau.nghean.gov.vn/trang-chu/di-tich-nha-tho-ho-vu-dai-ton-xom-dong-my-xa-hai-chau-bau-vat-tinh-than-cua-lang-dong-xuong-xua-974890?pageindex=0" target="_blank" rel="noopener">Dẫn chứng: Cổng TTĐT xã Hải Châu ↗</a>
+                </figcaption>
+              </figure>
+
+              <div class="lm-row">
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=nha-tho-ho-vu" aria-label="Xem chi tiết nhà thờ họ Vũ đại tôn"></a>
+                  <img src="https://datafiles.nghean.gov.vn/nan-ubnd/6649/quantritintuc20259/anh-3-1694139917-892082.jpg" alt="Sắc phong thời Khải Định lưu giữ tại nhà thờ họ Vũ" data-fallback="hovu-2" loading="lazy" />
+                  <figcaption>
+                    <h4>Báu vật dòng họ</h4>
+                    <p>Nơi đây còn lưu ngai thờ, bài vị, bản gia phả chữ Hán thời Tự Đức và sắc phong vua Khải Định — chứng tích của làng Đông Xương xưa.</p>
+                    <a class="src" href="https://haichau.nghean.gov.vn/trang-chu/di-tich-nha-tho-ho-vu-dai-ton-xom-dong-my-xa-hai-chau-bau-vat-tinh-than-cua-lang-dong-xuong-xua-974890?pageindex=0" target="_blank" rel="noopener">Dẫn chứng: Cổng TTĐT xã Hải Châu ↗</a>
+                  </figcaption>
+                </figure>
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=nghe-moc-dien-my" aria-label="Xem chi tiết nghề mộc Diễn Mỹ"></a>
+                  <img src="https://datafiles.nghean.gov.vn/nan-ubnd/6649/quantritintuc20259/anh2-1694139874-782693.jpg" alt="Không gian thờ tự tại nhà thờ họ Vũ đại tôn" data-fallback="hovu-3" loading="lazy" />
+                  <figcaption>
+                    <h4>Đất Đông Xương xưa</h4>
+                    <p>Làng Đông Xương (Diễn Mỹ) nổi tiếng với nghề đóng cối xay, cùng truyền thống khoa bảng của dòng họ Vũ và nghề hát tuồng lâu đời.</p>
+                    <a class="src" href="https://vi.wikipedia.org/wiki/Di%E1%BB%85n_Ch%C3%A2u_(huy%E1%BB%87n)" target="_blank" rel="noopener">Dẫn chứng: Wikipedia – Diễn Châu ↗</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 Diễn Hoàng -->
+        <article class="area reveal">
+          <div class="container area-grid">
+            <div class="area-head">
+              <span class="area-no">05</span>
+              <h3>Diễn Hoàng</h3>
+              <p class="area-sub">Làng Hoàng Hà · Hoàng La — trống da &amp; đình Tám Mái</p>
+              <p class="area-intro">
+                Vùng đất nội đồng phía Tây Bắc của xã với các làng Hoàng Hà, Hoàng
+                La, Phú Yên, nổi tiếng nhờ làng nghề làm trống da và ngôi đình Tám
+                Mái có kiến trúc, nghệ thuật điêu khắc độc đáo bậc nhất Diễn Châu.
+              </p>
+              <ul class="area-facts">
+                <li>Làng: Hoàng Hà · Hoàng La · Phú Yên</li>
+                <li>Giáp biển: không</li>
+              </ul>
+              <a class="area-more" href="chitiet.html?id=dien-hoang">Xem chi tiết Diễn Hoàng →</a>
+            </div>
+
+            <div class="area-media">
+              <figure class="lm lm--lead">
+                <a class="lm-link" href="chitiet.html?id=den-tam-mai" aria-label="Xem chi tiết đình Tám Mái"></a>
+                <img src="https://bna.1cdn.vn/2022/08/17/uploaded-huythubna-2022_08_17-_bna-1-5523.jpg" alt="Đình Tám Mái ở làng Hoàng Hà, xã Diễn Hoàng" data-fallback="dinhtammai-1" loading="lazy" />
+                <figcaption>
+                  <h4>Đình Tám Mái</h4>
+                  <p>Toạ lạc trên vùng đất cao ở làng Hoàng Hà, quay mặt Tây – Nam. Đình thờ Bạch Y công chúa, được công nhận Di tích lịch sử – văn hóa cấp tỉnh năm 2008.</p>
+                  <a class="src" href="https://baonghean.vn/doc-dao-nghe-thuat-kien-truc-dieu-khac-dinh-tam-mai-10243330.html" target="_blank" rel="noopener">Dẫn chứng: Báo Nghệ An ↗</a>
+                </figcaption>
+              </figure>
+
+              <div class="lm-row">
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=trong-hoang-ha" aria-label="Xem chi tiết nghề làm trống Hoàng Hà"></a>
+                  <img src="https://bna.1cdn.vn/2022/08/17/uploaded-huythubna-2022_08_17-_bna-3-7536.jpg" alt="Hạ đình với kiến trúc hai tầng tám mái" data-fallback="dinhtammai-2" loading="lazy" />
+                  <figcaption>
+                    <h4>Kiến trúc hai tầng tám mái</h4>
+                    <p>Hạ đình là ngôi nhà 3 gian 2 hồi dựng theo lối "trồng diêm", hai tầng tám mái; tầng lầu cao hơn tầng dưới gần 2 m.</p>
+                    <a class="src" href="https://baonghean.vn/doc-dao-nghe-thuat-kien-truc-dieu-khac-dinh-tam-mai-10243330.html" target="_blank" rel="noopener">Dẫn chứng: Báo Nghệ An ↗</a>
+                  </figcaption>
+                </figure>
+                <figure class="lm">
+                  <a class="lm-link" href="chitiet.html?id=den-tam-mai" aria-label="Xem chi tiết đình Tám Mái"></a>
+                  <img src="https://bna.1cdn.vn/2022/08/17/uploaded-huythubna-2022_08_17-_bna-9-1-7760.jpg" alt="Chạm khắc gỗ tinh xảo trong đình Tám Mái" data-fallback="dinhtammai-3" loading="lazy" />
+                  <figcaption>
+                    <h4>Nghệ thuật chạm khắc gỗ</h4>
+                    <p>Các kết cấu gỗ như xà, cột kê, đầu khấu được chạm trổ công phu; mặt bên những chiếc kẻ trước khắc đề tài "tứ linh".</p>
+                    <a class="src" href="https://baonghean.vn/doc-dao-nghe-thuat-kien-truc-dieu-khac-dinh-tam-mai-10243330.html" target="_blank" rel="noopener">Dẫn chứng: Báo Nghệ An ↗</a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <p class="area-note reveal">
+          Ghi chú: trong sắp xếp hành chính gần đây, hai xã Diễn Hùng và Diễn Hải đã
+          hợp nhất thành xã Hùng Hải, sau đó cùng Diễn Hoàng, Diễn Kim, Diễn Mỹ hợp
+          thành xã Hải Châu (từ 16/6/2025).
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 04 · Lễ hội ===== -->
+    <section class="section festivals" id="festivals">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label reveal"><span>04</span> Lễ hội</p>
+          <h2 class="sec-title reveal">Lễ hội truyền thống</h2>
+          <p class="sec-lead reveal">
+            Quanh năm, các làng trong xã nối nhau mở hội: rước kiệu, tế lễ, hát
+            tuồng và những nghi lễ cầu cho mùa cá bội thu. Bấm vào từng lễ hội để
+            xem chi tiết.
+          </p>
+        </div>
+
+        <div class="card-grid" id="festGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== 05 · Làng nghề ===== -->
+    <section class="section crafts" id="crafts">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label reveal"><span>05</span> Làng nghề</p>
+          <h2 class="sec-title reveal">Nghề truyền thống</h2>
+          <p class="sec-lead reveal">
+            Từ trống da Hoàng Hà, tơ tằm Diễn Kim tới đan nơm, làm muối và nuôi
+            hươu lấy nhung — mỗi nghề là một câu chuyện của đất và người Hải Châu.
+          </p>
+        </div>
+
+        <div class="card-grid" id="craftGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== 06 · Ẩm thực ===== -->
+    <section class="section food" id="food">
+      <div class="container food-grid">
+        <div class="food-text">
+          <p class="sec-label sec-label--light reveal"><span>06</span> Ẩm thực</p>
+          <h2 class="sec-title sec-title--light reveal">Vị biển tan nơi đầu lưỡi</h2>
+          <p class="food-lead reveal">
+            Hải Châu ăn theo con nước. Cá vừa lên bờ, không qua ướp đá nên giữ
+            nguyên vị tươi — nấu món gì cũng ngon. Bấm vào từng món để đọc thêm.
+          </p>
+
+          <div class="dishes">
+            <a class="dish reveal" href="chitiet.html?id=ca-trich-nuong">
+              <span class="dish-no">01</span>
+              <div class="dish-body">
+                <h4>Cá trích nướng</h4>
+                <p>Món dân dã của ngư dân, nướng than hồng ngay trên bãi biển — “cơn sốt” mỗi mùa cá trích về.</p>
+              </div>
+              <img class="dish-thumb" src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/032026/bna_1_20260323152901.jpg" alt="Cá trích nướng than hồng trên bãi biển" data-fallback="dish-ca-trich" loading="lazy" />
+            </a>
+            <a class="dish reveal" href="chitiet.html?id=ca-chao">
+              <span class="dish-no">02</span>
+              <div class="dish-body">
+                <h4>Cá cháo tươi</h4>
+                <p>Cá thân mềm, thịt ngọt, ít xương — đặc sản mùa Đông của vùng biển Diễn Châu.</p>
+              </div>
+              <img class="dish-thumb" src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/122025/2_20251226153231.jpg" alt="Cá cháo tươi vừa đánh bắt" data-fallback="dish-ca-chao" loading="lazy" />
+            </a>
+            <a class="dish reveal" href="chitiet.html?id=oc-cuom">
+              <span class="dish-no">03</span>
+              <div class="dish-body">
+                <h4>Ốc cườm</h4>
+                <p>Ốc nhỏ như cúc áo, hấp gừng lá chanh — món quà vặt mùa xuân của người miền biển.</p>
+              </div>
+              <img class="dish-thumb" src="https://bna.1cdn.vn/2019/07/31/uploaded-xuanhoangbna-2019_07_31-_bna_anh_13377919_3172019.jpg" alt="Ốc cườm trên bãi biển" data-fallback="dish-oc-cuom" loading="lazy" />
+            </a>
+            <a class="dish reveal" href="chitiet.html?id=nuoi-tom-cnc">
+              <span class="dish-no">04</span>
+              <div class="dish-body">
+                <h4>Tôm nuôi công nghệ cao</h4>
+                <p>Tôm sú từ vùng nuôi của xã, chắc thịt, ngọt vị — món quà đặc sản mang về.</p>
+              </div>
+              <img class="dish-thumb" src="https://bna.1cdn.vn/2025/09/20/bna_mo-hinh-nuoi-tom-cong-nghe-cao-tren-dia-ban-xa-dien-kim-cu-nay-la-xa-hai-chau-1-.jpg" alt="Mô hình nuôi tôm công nghệ cao ở Diễn Kim" data-fallback="dish-tom-cnc" loading="lazy" />
+            </a>
+          </div>
+        </div>
+
+        <div class="food-media reveal">
+          <img src="https://truyenhinhnghean.vn/file/4028eaa46735a26101673a4df345003c/122025/4_20251226153231.jpg" alt="Cá cháo — đặc sản vùng biển Diễn Châu" data-fallback="haisan-ca-chao" loading="lazy" />
+          <img class="food-media-small" src="https://cdn.nhandan.vn/images/7GQNpQgdVw900Cx84DO8d_C0m9bqwRWAwP2FRBwXGcY8e8say2JAFcaFxBiD6AcAcZj7Fnl8AGwafQiw_IxiSLnFSEUfIShdOSypPM_VFOHmZ9N2v4aZcLg70qnqEuDq/trongchinhcatrichnuong-09-177517652345078793505.jpg.webp" alt="Cá trích nướng trên bãi biển Hải Châu" data-fallback="haisan-ca-trich" loading="lazy" />
+          <a class="food-overlay" href="chitiet.html?id=ca-chao" aria-label="Xem chi tiết cá cháo biển"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 07 · Trải nghiệm ===== -->
+    <section class="section experiences" id="experiences">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-label reveal"><span>07</span> Trải nghiệm</p>
+          <h2 class="sec-title reveal">Làm gì ở Hải Châu?</h2>
+        </div>
+
+        <div class="exp-list">
+          <a class="exp reveal" href="chitiet.html?id=be-mang-ca-trich">
+            <span class="exp-num">01</span>
+            <h3>Theo bè mảng ra khơi</h3>
+            <p>Ra biển từ sáng sớm, chỉ 2–3 giờ mỗi chuyến gần bờ, tự tay gỡ cá cùng ngư dân.</p>
+            <span class="exp-time">2–3 giờ · Sáng sớm</span>
+          </a>
+          <a class="exp reveal" href="chitiet.html?id=ngay-hoi-ca-trich">
+            <span class="exp-num">02</span>
+            <h3>Mùa cá trích nướng</h3>
+            <p>Ngồi bên bãi biển nướng cá trích vừa mua của ngư dân, nghe sóng vỗ — đúng điệu Hải Châu.</p>
+            <span class="exp-time">Theo mùa · Bãi biển</span>
+          </a>
+          <a class="exp reveal" href="chitiet.html?id=cua-lach-van">
+            <span class="exp-num">03</span>
+            <h3>Đạp xe đường ven biển</h3>
+            <p>Đi hết cung đường phi lao, ghé bến bè mảng và các làng chài trong xã.</p>
+            <span class="exp-time">Nửa ngày · Tự túc</span>
+          </a>
+          <a class="exp reveal" href="chitiet.html?id=den-tam-mai">
+            <span class="exp-num">04</span>
+            <h3>Viếng đền, đình cổ</h3>
+            <p>Thăm đền Trang, đình Tám Mái và nhà thờ họ Vũ — những di tích còn giữ dấu xưa của vùng đất.</p>
+            <span class="exp-time">1–2 giờ · Quanh năm</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 08 · Thư viện ===== -->
+    <section class="section gallery" id="gallery">
+      <div class="container sec-head">
+        <div>
+          <p class="sec-label reveal"><span>08</span> Thư viện</p>
+          <h2 class="sec-title reveal">Hải Châu qua ống kính</h2>
+        </div>
+        <div class="gallery-nav reveal">
+          <button id="galPrev" aria-label="Ảnh trước">←</button>
+          <button id="galNext" aria-label="Ảnh sau">→</button>
+        </div>
+      </div>
+
+      <div class="gallery-track" id="galleryTrack">
+        <a class="shot" href="chitiet.html?id=hon-cau-bai-bien"><img src="https://datafiles.nghean.gov.vn/nan-ubnd/2935/quantritintuc20234/23638180395863741446.jpg" alt="Bãi biển Diễn Châu" data-fallback="g0" loading="lazy" /><figcaption>Bãi tắm mùa hè</figcaption></a>
+        <a class="shot" href="chitiet.html?id=be-mang-ca-trich"><img src="https://i.ex-cdn.com/danviet.vn/files/content/2026/01/08/163836c11-1630.jpg" alt="Bè mảng cập bờ" data-fallback="g1" loading="lazy" /><figcaption>Bè mảng cập bờ</figcaption></a>
+        <a class="shot" href="chitiet.html?id=be-mang-ca-trich"><img src="https://i.ex-cdn.com/danviet.vn/files/content/2026/01/08/163837c8-1632.jpg" alt="Cá tươi vừa đánh bắt" data-fallback="g2" loading="lazy" /><figcaption>Cá tươi vừa lên bãi</figcaption></a>
+        <a class="shot" href="chitiet.html?id=nuoi-tam-dien-kim"><img src="https://bna.1cdn.vn/2025/09/10/bna_-anh-66.jpg" alt="Thu hái lá dâu nuôi tằm" data-fallback="g3" loading="lazy" /><figcaption>Lá dâu nuôi tằm</figcaption></a>
+        <a class="shot" href="chitiet.html?id=hon-cau-dao"><img src="https://toplistnghean.vn/storage/media/2026/03/bien-dien-hai-toplistnghean-4.webp" alt="Bãi biển Hòn Câu" data-fallback="g4" loading="lazy" /><figcaption>Biển Hòn Câu</figcaption></a>
+        <a class="shot" href="chitiet.html?id=dien-kim"><img src="https://bna.1cdn.vn/2025/09/20/bna_mot-gocsc-xa-hai-chau.png" alt="Một góc xã Hải Châu" data-fallback="g5" loading="lazy" /><figcaption>Một góc xã Hải Châu</figcaption></a>
+        <a class="shot" href="chitiet.html?id=cua-lach-van"><img src="https://i.ex-cdn.com/danviet.vn/files/content/2026/01/08/163837c3-1634.jpg" alt="Hải sản đánh bắt gần bờ" data-fallback="g6" loading="lazy" /><figcaption>Đánh bắt gần bờ</figcaption></a>
+        <a class="shot" href="chitiet.html?id=dien-my"><img src="https://bna.1cdn.vn/2025/09/10/bna_-anh-33.jpg" alt="Thu hoạch lạc" data-fallback="g7" loading="lazy" /><figcaption>Mùa lạc trên đồng</figcaption></a>
+      </div>
+    </section>
+
+    <!-- ===== 09 · Đánh giá ===== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <p class="sec-label reveal"><span>09</span> Du khách nói gì</p>
+        <h2 class="sec-title reveal">Những lời nhắn để lại</h2>
+
+        <div class="review-slider reveal">
+          <div class="review-track" id="reviewTrack">
+            <blockquote class="review">
+              <p>“Bãi biển Hòn Câu đúng như lời đồn: cát mịn, sóng êm, lại chẳng đông đúc. Sáng ra ngắm bè mảng cập bờ mà thấy bình yên lạ.”</p>
+              <footer><b>Minh Anh</b><span>Hà Nội</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p>“Lần đầu được theo bè mảng ra khơi, tự tay gỡ cá. Về bờ ăn ngay mẻ cá trích nướng — tươi và ngọt, nhớ mãi.”</p>
+              <footer><b>Quốc Bảo</b><span>Vinh, Nghệ An</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p>“Hải sản ở Hải Châu tươi và rẻ bất ngờ. Mua ngay tại bãi biển, không qua ướp đá nên vị khác hẳn.”</p>
+              <footer><b>Thu Hà</b><span>TP. Hồ Chí Minh</span></footer>
+            </blockquote>
+            <blockquote class="review">
+              <p>“Cho bọn trẻ về đây chơi, ghé đồng lạc rồi thăm đình Tám Mái. Chuyến đi vừa có biển, vừa có chút lịch sử.”</p>
+              <footer><b>Gia đình anh Dũng</b><span>Hà Tĩnh</span></footer>
+            </blockquote>
+          </div>
+
+          <div class="review-dots" id="reviewDots"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M2 20c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="9" r="4.2" fill="currentColor"/></svg>
+          </span>
+          <span class="brand-text">Hải&nbsp;Châu<small>Tạp chí biển · Nghệ An</small></span>
+        </a>
+        <p class="footer-desc">Du lịch cộng đồng Hải Châu — bình yên, thật thà, và luôn có một chỗ cho bạn bên bờ biển.</p>
+      </div>
+
+      <div>
+        <h4>Khám phá</h4>
+        <ul>
+          <li><a href="#about">Về Hải Châu</a></li>
+          <li><a href="#destinations">Điểm đến</a></li>
+          <li><a href="#areas">Vùng đất</a></li>
+          <li><a href="#festivals">Lễ hội</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="#crafts">Làng nghề</a></li>
+          <li><a href="#food">Ẩm thực</a></li>
+          <li><a href="#gallery">Thư viện ảnh</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Theo dõi</h4>
+        <div class="socials">
+          <a href="#top" aria-label="Facebook">Fb</a>
+          <a href="#top" aria-label="Instagram">Ig</a>
+          <a href="#top" aria-label="YouTube">Yt</a>
+          <a href="#top" aria-label="TikTok">Tt</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Du lịch Hải Châu, Nghệ An. Trang minh hoạ phi lợi nhuận.</span>
+      <span>Tác giả: <b>Phạm Minh Sang</b></span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Về đầu trang">↑</button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

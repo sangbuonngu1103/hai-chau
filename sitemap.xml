@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap cho GitHub Pages.
+  Thay "https://USERNAME.github.io/hai-chau" bằng địa chỉ thật của bạn.
+  Ví dụ: https://minhsang.github.io/hai-chau
+  Nếu gắn tên miền riêng: https://haichau.vn
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://USERNAME.github.io/hai-chau/</loc><priority>1.0</priority></url>
+
+  <!-- Vùng đất -->
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=dien-kim</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=dien-hung</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=dien-hai</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=dien-my</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=dien-hoang</loc></url>
+
+  <!-- Điểm đến -->
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=hon-cau-bai-bien</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=hon-cau-dao</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=kenh-nha-le</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=den-trang</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=den-tam-mai</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=nha-tho-ho-vu</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=vung-nuoi-tom</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=cua-lach-van</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=duong-ven-bien</loc></url>
+
+  <!-- Lễ hội -->
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-den-trang</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-den-ba-quan</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-dinh-tam-mai</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-den-nguyen-cong-vinh</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=ngay-hoi-ca-trich</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-cau-ngu</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-den-cuong</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=le-hoi-dinh-long-an</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=tuc-tho-ca-ong</loc></url>
+
+  <!-- Làng nghề -->
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=trong-hoang-ha</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=nuoi-tam-dien-kim</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=dan-nom</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=nuoi-tom-cnc</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=be-mang-ca-trich</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=lam-muoi</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=nuoc-mam-van-phan</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=hat-tuong</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=nghe-moc-dien-my</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=ben-vong</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=nuoi-huou</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=banh-muot</loc></url>
+
+  <!-- Ẩm thực -->
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=ca-trich-nuong</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=ca-chao</loc></url>
+  <url><loc>https://USERNAME.github.io/hai-chau/chitiet.html?id=oc-cuom</loc></url>
+</urlset>

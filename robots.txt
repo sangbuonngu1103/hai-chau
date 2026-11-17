@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (thay USERNAME và tên repo cho đúng sau khi deploy)
+Sitemap: https://USERNAME.github.io/hai-chau/sitemap.xml

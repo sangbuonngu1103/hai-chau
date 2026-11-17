@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết — Hải Châu, Nghệ An</title>
+  <meta name="description" content="Trang chi tiết về vùng đất, điểm đến, lễ hội và nghề truyền thống của xã Hải Châu, tỉnh Nghệ An." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E" />
+</head>
+<body class="detail-page">
+
+  <!-- ===== Thanh điều hướng ===== -->
+  <header class="site-header scrolled" id="header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Hải Châu">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M2 20c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M2 26c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".5"/><circle cx="24" cy="9" r="4.2" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-text">Hải&nbsp;Châu<small>Tạp chí biển · Nghệ An</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Điều hướng chính">
+        <a href="index.html">Trang chủ</a>
+        <a href="index.html#destinations">Điểm đến</a>
+        <a href="index.html#areas">Vùng đất</a>
+        <a href="index.html#festivals">Lễ hội</a>
+        <a href="index.html#crafts">Làng nghề</a>
+        <a href="index.html#gallery">Thư viện</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="detailRoot" class="detail-root">
+    <div class="container">
+      <p class="detail-loading">Đang tải nội dung…</p>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M2 20c3-3 5-3 8 0s5 3 8 0 5-3 8 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="9" r="4.2" fill="currentColor"/></svg>
+          </span>
+          <span class="brand-text">Hải&nbsp;Châu<small>Tạp chí biển · Nghệ An</small></span>
+        </a>
+        <p class="footer-desc">Du lịch cộng đồng Hải Châu — bình yên, thật thà, và luôn có một chỗ cho bạn bên bờ biển.</p>
+      </div>
+
+      <div>
+        <h4>Khám phá</h4>
+        <ul>
+          <li><a href="index.html#about">Về Hải Châu</a></li>
+          <li><a href="index.html#destinations">Điểm đến</a></li>
+          <li><a href="index.html#areas">Vùng đất</a></li>
+          <li><a href="index.html#festivals">Lễ hội</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Hỗ trợ</h4>
+        <ul>
+          <li><a href="index.html#crafts">Làng nghề</a></li>
+          <li><a href="index.html#food">Ẩm thực</a></li>
+          <li><a href="index.html#gallery">Thư viện ảnh</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Theo dõi</h4>
+        <div class="socials">
+          <a href="index.html" aria-label="Facebook">Fb</a>
+          <a href="index.html" aria-label="Instagram">Ig</a>
+          <a href="index.html" aria-label="YouTube">Yt</a>
+          <a href="index.html" aria-label="TikTok">Tt</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Du lịch Hải Châu, Nghệ An. Trang minh hoạ phi lợi nhuận.</span>
+      <span>Tác giả: <b>Phạm Minh Sang</b></span>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Về đầu trang">↑</button>
+
+  <script src="data.js"></script>
+  <script src="chitiet.js"></script>
+</body>
+</html>
